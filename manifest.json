@@ -1,0 +1,9 @@
+{
+    "name": "Bravo 3leek",
+    "description": "Medhat Shalaby Bravo 3leek for trello tasks!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    }
+}
