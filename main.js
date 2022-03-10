@@ -1,9 +1,14 @@
-alert("Click anywhere on the page to test playing audio from an extension.")
+// alert("Click anywhere on the page to test playing audio from an extension.")
+$(document).ready(function () { 
+	$(document).on('click',function (e) { 
+		if(e.target.className == "checklist-item-checkbox enabled js-toggle-checklist-item"){
+			let url = chrome.runtime.getURL('bravo.mp3')
 
-document.addEventListener('click', () => {
-	let url = chrome.runtime.getURL('note.mp3')
-	console.log(url)
+			let a = new Audio(url)
+	
+			a.play()
+		}
+	});
+});
 
-	let a = new Audio(url)
-	a.play()
-})
+

@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "Test audio extension",
-	"description": "Test playing audio from an extension.",
+	"name": "Trello Bravo 3leek",
+	"description": "bravo 3leek by elking medht shalby.",
 	"version": "0",
-	"author": "Marco Bonelli",
+	"author": "Mohamed Eid",
 
 	"icons": {
 		"16": "images/icons/16.png",
@@ -20,7 +20,9 @@
 	"content_scripts": [
 		{
 			"matches": ["https://trello.com/*"],
-			"js": ["main.js"]
+			"js": ["jquery.min.js", "main.js"],
+			"run_at": "document_end"
+
 		}
 	]
 }
